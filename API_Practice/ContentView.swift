@@ -28,11 +28,11 @@ struct ContentView: View {
     var body: some View {
         VStack
         {
-            Button("Fetch Data of 2 Users")
+            Button("Fetch Data of 5 Users")
             {
                 Task
                 {
-                    await fetchData(limit: 2)
+                    await fetchData(limit: 5)
                 }
             }
             Button("Fetch Data of 10 Users")
